@@ -80,6 +80,9 @@
     color: red;
   }
 
+  .hide {
+    display: none;
+  }
 
   .columns {
     display: flex;
