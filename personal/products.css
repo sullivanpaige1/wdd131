@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Montserrat', Helvetica, sans-serif;
+    color: #333;
+    background-color: #FAF3DD;
+  }
+  
+  header {
+    background: #FAF3DD;
+    border-bottom: 1px solid #7DAF9C;
+    position: relative;
+    z-index: 10;
+  }
+  
+  .nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 16px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .nav-left {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+  }
+  
+  .logo {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 24px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #FF8E61;
+    font-size: 15px;
+  }
+  
+  .nav-links a:hover {
+    text-decoration: underline;
+  }
+  
+  .nav-button button {
+    padding: 10px 18px;
+    border: none;
+    border-radius: 6px;
+    background: #FF8E61;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .nav-button button:hover {
+    background: #222;
+  }
+  
+  .products {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 24px;
+  }  
+    
+    
+    .product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+  }  
+
+    .product-card {
+    background: #fff;
+    border: 1px solid #FF8E61;
+    padding: 16px;
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    
+    .product-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    }
+    
+    .product-image {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    background: #eee;
+    border: 1px solid #ccc;
+    margin-bottom: 12px;
+    }
+    
+    .product-title {
+    font-size: 15px;
+    font-weight: 500;
+    }
+    
+    @media (max-width: 1024px) {
+    .product-grid {
+    grid-template-columns: repeat(2, 1fr);}
+    }
+    
+    @media (max-width: 600px) {
+    .product-grid {
+    grid-template-columns: 1fr;}
+    }
+
+    .verse-box {
+    background-color: #FFF0E5;
+    border: 2px solid #FF8E61;
+    border-radius: 8px;
+    padding: 16px;
+    max-width: 400px;
+    margin: 40px auto;
+    text-align: center;
+    }

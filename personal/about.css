@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Montserrat', Helvetica, sans-serif;
+    color: #FF8E61;
+    background-color: #FAF3DD;
+    line-height: 1.6;
+  }
+  
+  header {
+    background: #FAF3DD;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 16px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .nav-left {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+  }
+  
+  .logo {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 24px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #FF8E61;
+    font-size: 15px;
+  }
+  
+  .nav-links a:hover {
+    text-decoration: underline;
+  }
+  
+  .nav-button button {
+    padding: 10px 18px;
+    border: none;
+    border-radius: 6px;
+    background: #FF8E61;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .nav-button button:hover {
+    background: #2f465f;
+  }
+
+  .hero {
+    position: relative;
+    width: 100%;
+    height: 65vh;
+    min-height: 420px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  
+  .hero img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+  }
+  
+  .hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    z-index: 2;
+  }
+  
+  .hero-content {
+    position: relative;
+    z-index: 3;
+    text-align: center;
+    color: #ffffff;
+    max-width: 800px;
+    padding: 0 24px;
+  }
+  
+  .hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 12px;
+  }
+  
+  .hero-content p {
+    font-size: 18px;
+  }
+
+  .about {
+    max-width: 800px;
+    margin: 80px auto;
+    padding: 0 24px;
+    text-align: center;
+  }
+  
+  .about h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #FF8E61;
+  }
+  
+  .about p {
+    font-size: 17px;
+    line-height: 1.8;
+    margin-bottom: 24px;
+    color: #FF8E61;
+  }
+  
+  .about p:last-child {
+    font-style: italic;
+    font-weight: 500;
+    color: #FF8E61;
+  }
+  
